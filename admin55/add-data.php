@@ -58,6 +58,7 @@ else if(isset($_GET['failure']))
 <div class="clearfix"></div><br />
 
 <div class="container">
+    <h1 style="text-align: center;">Enregistrer votre aliment svp!</h1>
 
   
   <form method='post'>

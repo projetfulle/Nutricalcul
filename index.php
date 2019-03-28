@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- fontawesome -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <title>Nutri Calcul!</title>
   </head>
   <body>
@@ -34,28 +38,16 @@
 		</div>
 
 
-		<form class="ajax" action="recherche.php" method="get">
-	<p>
-		<label for="recherche">Rechercher un lieu</label>
-		<input type="text" name="recherche" id="recherche" />
-	</p>
-</form>
-<div id="results"></div>
-
-
-
-		<form action="?submit=1" method="POST">
-			<div id="selrows">
-						<div class="row aliment">
-					<div class="col-xs-10 col-sm-8 text-right">
-						<label for="recherche">Aliment: </label>&nbsp;<input type="text" name="recherche" id="recherche" value="" placeholder="Aliment…" class="ui-autocomplete-input" autocomplete="">
-						<div id="results"></div>
-
-						<input type="submit" id="calcnut" class="calcnut btn btn-success" value="(RE)CALCULER">
-					</div>
-				</div>
-					</div>
-			</div>
+		<form action="recherche.php" method="get" class="ajax">
+			<div class="container h-100">
+	      <div class="d-flex justify-content-center h-100">
+	        <div class="searchbar">
+	          <input class="search_input" type="text" name="recherche" id="recherche" placeholder="Commencer à saisir un aliment...">
+	          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+	        </div>
+	      </div>
+	         <div class="resultat" id="resultat"></div>
+          </div>
 		</form>
 
 
